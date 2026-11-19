@@ -6,36 +6,44 @@
     android:orientation="vertical"
     android:padding="24dp">
 
-    <TextView android:layout_width="match_parent"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/event_registration"
-        android:textSize="22sp"
-        android:inputType=""/>
+        android:textSize="22sp" />
 
-    <EditText android:id="@+id/etSatu"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etSatu"
+        android:layout_width="360dp"
         android:layout_height="48dp"
+        android:autofillHints="name"
         android:hint="@string/nama_peserta"
-        android:autofillHints="name"
-        android:inputType="text" />
+        android:textColorHint="@color/abu_gelap"
+        android:inputType="text"/>
 
-    <EditText android:id="@+id/etDua"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etDua"
+        android:layout_width="360dp"
         android:layout_height="48dp"
+        android:autofillHints="name"
         android:hint="@string/nama_event"
-        android:autofillHints="name"
-        android:inputType="text" />
+        android:textColorHint="@color/abu_gelap"
+        android:inputType="text"/>
 
-    <EditText android:id="@+id/etJumlah"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="360dp"
         android:layout_height="48dp"
-        android:hint="@string/jumlah_tiket"
         android:autofillHints="jumlah_tiket"
-        android:inputType="number" />
+        android:hint="@string/jumlah_tiket"
+        android:textColorHint="@color/abu_gelap"
+        android:inputType="number"/>
 
-    <Button android:id="@+id/btnHitung"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="@string/hitung_dan_lihat_hasil" />
 
 </LinearLayout>
